@@ -1,0 +1,221 @@
+/*fuente para todo el html*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,600');
+
+html{
+    font-size: 62.5%;/*es el porcentaje del tamaño que establecio el user en el navegador*/
+    /*font-size: 10px que corresponde al 10% del tamaño de la fuente del html*/
+}
+
+*{/* es el reseto para borrar los margenes del html*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.header{
+    height: 100vh; /*1vh = 1% del alto de cualquier pantalla en donde este abierto mi html*/
+    background-image: url(../assets/img/Index.jpeg); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed ;
+}
+
+.contenedorLogo{
+    width: 50%;
+    display: inline-block;
+
+}
+
+.logo{
+    width: 15%;    
+}
+
+.navegacion{
+    display: inline-block;
+    width: 45%;
+    text-align: right;
+    font-size: 3rem;
+}
+
+.listaItem{
+    list-style: none;
+    display: inline-block;
+    padding-top: 0;
+}
+
+/*anclas de la navegacion*/
+.linkNav{
+    text-decoration: none;
+    color: rgb(255, 252, 252);
+    margin-right: 0;
+    font-size: 1.6rem;
+    display: inline-block;
+    padding: 15px;
+    
+}
+
+/*estilado para el titulo del index*/
+.cajaTitulo{
+    width: 45%;;
+    color: white;; /*este ejemplo es 3 veces el tamaño que tiene establecido el html*/
+    text-align: center;
+    margin-left: 11%;
+    margin-top: 10%;
+    font-size: 2.5rem;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+
+.main{
+    background-color: rgb(46, 22, 3);
+}
+
+.subtitulo1{
+    margin-top: 5vh;
+    color:white;
+    font-size: 3rem;
+    margin-left: 68vh;
+    font-weight: 600;
+}
+
+.mensaje{
+    color: white;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: 9vh;  
+    margin-left: 30vh;
+    margin-right: 30vh;  
+    margin-bottom: 10vh;
+    text-align: center;
+}
+
+.subtitulo2{
+    color: white;
+    width: 50%;
+    margin-top: 5vh;
+    margin-left: 50vh;
+    font-size: 2rem;
+    text-align: center;
+
+}
+
+
+.mapa{
+    margin-top: 5vh;
+    width: 100%;
+}
+
+
+.localizacion{
+    margin-top: 3vh;
+    width: 50%;
+    margin-left: 25%;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    padding-bottom: 3vh;
+
+}
+
+.subtitulo3{
+    padding-top: 1.5vh;
+}
+
+.footer{
+    background-color: rgb(68, 34, 5);
+    height: 50vh;
+}
+
+.nosotros{ 
+
+    display: inline-block;
+    width: 30%;
+    color: white;
+    margin-left: 10%;
+    margin-top: 0;
+    font-size: 2rem;
+
+}
+
+.tituloNosotros{
+    padding-bottom: 6.5vh;
+    font-size: 2rem;
+}
+
+.parrafo1{
+    padding-top: 4vh;
+    font-size: 1.5rem;
+}
+
+.servicios{
+    display: inline-block;
+    width: 15%;
+    color: white;
+    margin-top: 5vh;
+    padding-bottom: 3vh;
+    margin-left: 5vh;
+}
+
+.tituloServicios{
+    padding-bottom: 5vh;
+    font-size: 2rem;
+    margin-left: 5vh;
+}
+
+.listaServicios{
+    list-style: none;
+    padding: 5px;
+    font-size: 1.5rem;
+    margin-left: 5vh;
+}
+
+.consultas{
+
+    display: inline-block;
+    width: 30%;
+    color: white;
+    font-size: 2rem;
+}
+
+.tituloConsultas{
+    padding-bottom: 5vh;
+    font-size: 2rem;
+    margin-left: 5vh;
+}
+
+.listaConsultas{
+    list-style: none;
+    padding: 5px;
+    font-size: 1.5rem;
+    margin-left: 5vh;
+}
+
+
+.divIconos{
+    margin-left: 20%;
+    margin-top: 5vh;
+}
+
+.icono{
+    font-size: 40px;
+    color: orange;
+    padding: 10px;
+}
+
+.divGaleria{
+    margin-left: 30%;
+}
+
+.tituloYt{
+    color: white;
+    font-size: 2.5rem;
+    margin-left: 10%;
+}
+
