@@ -26,48 +26,33 @@ body{
     background-attachment: fixed ;
 }
 
-.contenedorLogo{
-    width: 50%;
-    display: inline-block;
-
-}
-
-.logo{
-    width: 15%;    
-}
 
 .navegacion{
-    display: inline-block;
-    width: 45%;
-    text-align: right;
-    font-size: 3rem;
+
+    font-size: 2rem;
 }
 
-.listaItem{
-    list-style: none;
-    display: inline-block;
-    padding-top: 0;
-}
 
 /*anclas de la navegacion*/
-.linkNav{
+.navbar-nav .nav-item .nav-link {
     text-decoration: none;
-    color: rgb(255, 252, 252);
-    margin-right: 0;
-    font-size: 1.6rem;
-    display: inline-block;
-    padding: 15px;
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    padding: 20px
     
 }
 
+.tienda{
+    padding-right: 9vh !important;
+}
 /*estilado para el titulo del index*/
-.cajaTitulo{
-    width: 45%;;
+.cajaTitulo .h1,h1{
+    width: 40%;;
     color: white;; /*este ejemplo es 3 veces el tamaño que tiene establecido el html*/
     text-align: center;
-    margin-left: 11%;
+    margin-left: 12.5%;
     margin-top: 10%;
-    font-size: 2.5rem;
+    font-size: 3rem;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
 }
