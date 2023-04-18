@@ -47,8 +47,8 @@ body{
 }
 /*estilado para el titulo del index*/
 .cajaTitulo .h1,h1{
-    width: 40%;;
-    color: white;; /*este ejemplo es 3 veces el tamaño que tiene establecido el html*/
+    width: 40%;
+    color: white; /*este ejemplo es 3 veces el tamaño que tiene establecido el html*/
     text-align: center;
     margin-left: 12.5%;
     margin-top: 10%;
@@ -61,6 +61,7 @@ body{
 .main{
     background-color: rgb(46, 22, 3);
 }
+
 
 .subtitulo1{
     margin-top: 5vh;
@@ -115,12 +116,17 @@ body{
 
 .footer{
     background-color: rgb(68, 34, 5);
-    height: 50vh;
+    
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .nosotros{ 
 
-    display: inline-block;
     width: 30%;
     color: white;
     margin-left: 10%;
@@ -130,12 +136,13 @@ body{
 }
 
 .tituloNosotros{
-    padding-bottom: 6.5vh;
     font-size: 2rem;
+    padding-top: 5vh;
+
 }
 
 .parrafo1{
-    padding-top: 4vh;
+    padding-top: 7vh;
     font-size: 1.5rem;
 }
 
@@ -158,21 +165,24 @@ body{
     list-style: none;
     padding: 5px;
     font-size: 1.5rem;
-    margin-left: 5vh;
 }
 
 .consultas{
 
-    display: inline-block;
     width: 30%;
     color: white;
     font-size: 2rem;
 }
 
 .tituloConsultas{
-    padding-bottom: 5vh;
+    padding-top: 5vh;
     font-size: 2rem;
-    margin-left: 5vh;
+    padding-left: 10vh;
+    padding-bottom: 5px;
+}
+
+.ulConsultas{
+    padding-top: 5vh;
 }
 
 .listaConsultas{
@@ -194,13 +204,38 @@ body{
     padding: 10px;
 }
 
-.divGaleria{
-    margin-left: 30%;
+.tituloGaleria .h2, h2{
+    color:white;
+    font-size: 4rem;
+    margin-left: 78vh;
+    font-weight: 600;
+    padding-top: 20px;
+}
+.contenedorGaleria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+.imagen{
+    border: 1px solid black;
+
+}
+
+.imagen img{
+    width: 300px;
+    height: 300px;
 }
 
 .tituloYt{
     color: white;
     font-size: 2.5rem;
-    margin-left: 10%;
+    margin-left: 78vh;
 }
 
+.videoYt{
+    margin-left: 65vh;
+}
