@@ -14,7 +14,7 @@ html{
 
 body{
     font-family: 'Poppins', sans-serif;
-    
+    background-color: rgb(46, 22, 3);
 }
 
 .header{
@@ -23,12 +23,11 @@ body{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed ;
+    background-attachment: fixed;
 }
 
 
 .navegacion{
-
     font-size: 2rem;
 }
 
@@ -38,17 +37,21 @@ body{
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-size: 2rem;
-    padding: 20px
-    
+    padding: 20px;
+}
+
+.colorBurguer{
+    border-color: black !important;
+    border: 3px solid black !important;
 }
 
 .tienda{
     padding-right: 9vh !important;
 }
 /*estilado para el titulo del index*/
-.cajaTitulo .h1,h1{
+.cajaTitulo{
     width: 40%;
-    color: white; /*este ejemplo es 3 veces el tamaño que tiene establecido el html*/
+    color: white;
     text-align: center;
     margin-left: 12.5%;
     margin-top: 10%;
@@ -63,12 +66,16 @@ body{
 }
 
 
+.cajaSubtitulo1{
+    padding-top: 5vh;
+}
+
 .subtitulo1{
-    margin-top: 5vh;
     color:white;
     font-size: 3rem;
     margin-left: 68vh;
     font-weight: 600;
+
 }
 
 .mensaje{
@@ -89,9 +96,7 @@ body{
     margin-left: 50vh;
     font-size: 2rem;
     text-align: center;
-
 }
-
 
 .mapa{
     margin-top: 5vh;
@@ -136,12 +141,14 @@ body{
 }
 
 .tituloNosotros{
-    font-size: 2rem;
+    color: white;
+    font-size: 2.3rem;
     padding-top: 5vh;
 
 }
 
 .parrafo1{
+    color: white;
     padding-top: 7vh;
     font-size: 1.5rem;
 }
@@ -156,29 +163,34 @@ body{
 }
 
 .tituloServicios{
-    padding-bottom: 5vh;
-    font-size: 2rem;
-    margin-left: 5vh;
+    color: white;
+    padding-top: 5vh;
+    font-size: 2.3rem;
+
 }
 
+.ulServicios{
+    padding-top: 5vh;
+}
+
+
 .listaServicios{
+    color: white;
     list-style: none;
-    padding: 5px;
     font-size: 1.5rem;
+
 }
 
 .consultas{
-
     width: 30%;
     color: white;
     font-size: 2rem;
 }
 
 .tituloConsultas{
+    color: white;
     padding-top: 5vh;
-    font-size: 2rem;
-    padding-left: 10vh;
-    padding-bottom: 5px;
+    font-size: 2.3rem;
 }
 
 .ulConsultas{
@@ -186,10 +198,9 @@ body{
 }
 
 .listaConsultas{
+    color: white;
     list-style: none;
-    padding: 5px;
     font-size: 1.5rem;
-    margin-left: 5vh;
 }
 
 
@@ -204,12 +215,21 @@ body{
     padding: 10px;
 }
 
-.tituloGaleria .h2, h2{
+.headerGaleria{
+    height: 100vh;
+    background-image: url(/assets/img/Header\ Galeria.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.tituloGaleria{
     color:white;
     font-size: 4rem;
-    margin-left: 78vh;
+
     font-weight: 600;
-    padding-top: 20px;
+
 }
 .contenedorGaleria{
     display: flex;
@@ -220,22 +240,92 @@ body{
     
 }
 
+.headerContacto{
+    height: 100vh;
+    background-image: url(/assets/img/Header\ Contactojpg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+@media(max-width: 768px){
+    .headerContacto{
+        height: 100vh;
+    }
+}
+
+.cajaTitulo_Contacto{
+    font-size: 5rem;
+}
+
+.mainContacto{
+    background-color: rgb(46, 22, 3);
+}
+
+.informacionContacto{
+    margin-left: 7vh;
+}
+
+.infoContacto{
+    height: 50vh;
+}
+
+.listaContacto{
+    color: white;
+    font-size: 2.5rem;
+    padding: 2vh;
+}
+
 .imagen{
     border: 1px solid black;
-
+    
 }
 
 .imagen img{
     width: 300px;
     height: 300px;
+    object-fit: cover;
+
 }
 
 .tituloYt{
     color: white;
-    font-size: 2.5rem;
-    margin-left: 78vh;
+    font-size: 4rem;
+
 }
 
-.videoYt{
-    margin-left: 65vh;
+
+.headerServicios{
+    height: 100vh;
+    background-image: url(/assets/img/Header\ Servicios.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
+
+.mainServicios{
+    height: 100vh;
+    background-color: black;
+}
+
+.imagenServicios{
+
+    background-image: url(/assets/img/ImagenServicio.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+
+}
+
+.cajaPrecios{
+    height: 60vh;
+}
+
+.listaCosto{
+    font-size: 2.5rem;
+    padding: 2vh;
+}
+
