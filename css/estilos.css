@@ -217,7 +217,7 @@ body{
 
 .headerGaleria{
     height: 100vh;
-    background-image: url(/assets/img/Header\ Galeria.jpg);
+    background-image: url(../assets/img/Header\ Galeria.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -242,7 +242,7 @@ body{
 
 .headerContacto{
     height: 100vh;
-    background-image: url(/assets/img/Header\ Contactojpg.jpg);
+    background-image: url(../assets/img/Header\ Contactojpg.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -298,7 +298,7 @@ body{
 
 .headerServicios{
     height: 100vh;
-    background-image: url(/assets/img/Header\ Servicios.jpg);
+    background-image: url(../assets/img/Header\ Servicios.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -312,7 +312,7 @@ body{
 
 .imagenServicios{
 
-    background-image: url(/assets/img/ImagenServicio.jpg);
+    background-image: url(../assets/img/ImagenServicio.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
