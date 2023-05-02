@@ -66,28 +66,15 @@ body{
 }
 
 
-.cajaSubtitulo1{
-    padding-top: 5vh;
-}
-
-.subtitulo1{
-    color:white;
-    font-size: 3rem;
-    margin-left: 68vh;
-    font-weight: 600;
-
-}
-
-.mensaje{
+.tituloBienvenido{
     color: white;
-    font-size: 2rem;
-    font-weight: 400;
-    margin-top: 9vh;  
-    margin-left: 30vh;
-    margin-right: 30vh;  
-    margin-bottom: 10vh;
-    text-align: center;
+    font-size: 3rem;
 }
+
+.parrafoBienvenido{
+    font-size: 1.8rem;
+}
+
 
 .subtitulo2{
     color: white;
@@ -99,7 +86,7 @@ body{
 }
 
 .mapa{
-    margin-top: 5vh;
+    margin-top: 3vh;
     width: 100%;
 }
 
@@ -277,6 +264,10 @@ body{
     padding: 2vh;
 }
 
+.botonEnviar{
+    font-size: 2.2rem;
+}
+
 .imagen{
     border: 1px solid black;
     
@@ -306,8 +297,7 @@ body{
 }
 
 .mainServicios{
-    height: 100vh;
-    background-color: black;
+    background-color: rgb(46, 22, 3)
 }
 
 .imagenServicios{
@@ -327,5 +317,14 @@ body{
 .listaCosto{
     font-size: 2.5rem;
     padding: 2vh;
+}
+
+.headerTienda{
+    height: 100vh;
+    background-image: url(../assets/img/Header\ Tienda.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
