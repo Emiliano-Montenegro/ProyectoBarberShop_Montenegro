@@ -1,0 +1,29 @@
+section{
+        .tituloBienvenido{
+            color: white;
+            font-size: 3rem;
+        }
+        .parrafoBienvenido{
+            font-size: 1.8rem;
+        }
+}
+
+section{
+    .mapa{
+        margin-top: 3vh;
+        width: 100%;
+    }
+    
+    .localizacion{
+        margin-top: 3vh;
+        width: 50%;
+        margin-left: 25%;
+        text-align: center;
+        font-size: 2rem;
+        color: white;
+        padding-bottom: 3vh;
+        .subtitulo3{
+            padding-top: 1.5vh;
+        }
+    }
+}

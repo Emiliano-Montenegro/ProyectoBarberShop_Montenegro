@@ -1,0 +1,75 @@
+.header{
+    position: relative;    
+    .navegacion{
+        font-size: 2rem;
+        .colorBurguer{
+            border-color: white !important;
+            border: 2px solid white !important;
+            background-color: white;
+        }
+        .navbar-nav{
+            .nav-item{
+                .nav-link{
+                    text-decoration: none;
+                    color: rgb(255, 255, 255);
+                    font-size: 2rem;
+                    padding: 20px;
+                    &:hover{
+                        color:gray
+                    }
+                }
+            }
+        }    
+    }
+        .cajaTitulo{
+            width: 40%;
+            color: white;
+            text-align: center;
+            margin-left: 12.5%;
+            margin-top: 10%;
+            font-size: 3rem;
+            /*backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);*/
+        }
+        .reserva{
+            position: absolute;
+            top: 200px;
+            right: 100px;
+            background-color: rgba(255, 255, 255, 0.388);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 120px;
+            width: 130px;
+            border-radius: 50%;
+            padding: 10px;
+            animation-name: pulse;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            .parrafoReserva{
+                margin: 0;
+                font-size: 1.5rem;
+                text-align: center;
+            }
+        }
+        @media only screen and (max-width: 767px) {
+            .reserva {
+                top: auto;
+                right: 10px;
+                left: auto;
+            }
+        }            
+}
+
+@keyframes pulse{
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,6 @@
+/*El mixin está agregado en _footer.scss (.container) */
+@mixin flexbox($display, $direccion, $justificacion){
+    display: $display;
+    flex-direction: $direccion;
+    justify-content: $justificacion;
+}

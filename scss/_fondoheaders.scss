@@ -1,0 +1,33 @@
+.header__img__index{
+    background-image: url(../assets/img/Index.jpeg);
+    height: 100vh;     
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    @media screen and (max-width: 768px) {
+        background-image: url(../assets/img/IndexMQ.jpg);
+        height: 100vh;
+    }
+}
+
+.header__img__galeria{
+    background-image: url(../assets/img/Header\ Galeria.jpg); 
+    @extend .header__img__index
+}
+
+.header__img__contacto{
+    background-image: url(../assets/img/Header\ Contactojpg.jpg); 
+    @extend .header__img__index
+}
+
+.header__img__servicios{
+    background-image: url(../assets/img/Header\ Servicios.jpg); 
+    @extend .header__img__index
+}
+
+.header__img__tienda{
+    background-image: url(../assets/img/Header\ Tienda.jpg); 
+    @extend .header__img__index
+}

@@ -1,0 +1,329 @@
+/*fuente para todo el html*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,600');
+
+html{
+    font-size: 62.5%;/*es el porcentaje del tamaÃ±o que establecio el user en el navegador*/
+    /*font-size: 10px que corresponde al 10% del tamaÃ±o de la fuente del html*/
+}
+
+*{/* es el reseto para borrar los margenes del html*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(46, 22, 3);
+}
+
+.header{
+    height: 100vh; /*1vh = 1% del alto de cualquier pantalla en donde este abierto mi html*/
+    background-image: url(../assets/img/Index.jpeg); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.navegacion{
+    font-size: 2rem;
+}
+
+
+/*anclas de la navegacion*/
+.navbar-nav .nav-item .nav-link {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    padding: 20px;
+}
+
+.colorBurguer{
+    border-color: black !important;
+    border: 3px solid black !important;
+}
+
+.tienda{
+    padding-right: 9vh !important;
+}
+/*estilado para el titulo del index*/
+.cajaTitulo{
+    width: 40%;
+    color: white;
+    text-align: center;
+    margin-left: 12.5%;
+    margin-top: 10%;
+    font-size: 3rem;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+
+.main{
+    background-color: rgb(46, 22, 3);
+}
+
+
+.tituloBienvenido{
+    color: white;
+    font-size: 3rem;
+}
+
+.parrafoBienvenido{
+    font-size: 1.8rem;
+}
+
+
+.subtitulo2{
+    color: white;
+    width: 50%;
+    margin-top: 5vh;
+    margin-left: 50vh;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.mapa{
+    margin-top: 3vh;
+    width: 100%;
+}
+
+
+.localizacion{
+    margin-top: 3vh;
+    width: 50%;
+    margin-left: 25%;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    padding-bottom: 3vh;
+
+}
+
+.subtitulo3{
+    padding-top: 1.5vh;
+}
+
+.footer{
+    background-color: rgb(68, 34, 5);
+    
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.nosotros{ 
+
+    width: 30%;
+    color: white;
+    margin-left: 10%;
+    margin-top: 0;
+    font-size: 2rem;
+
+}
+
+.tituloNosotros{
+    color: white;
+    font-size: 2.3rem;
+    padding-top: 5vh;
+
+}
+
+.parrafo1{
+    color: white;
+    padding-top: 7vh;
+    font-size: 1.5rem;
+}
+
+.servicios{
+    display: inline-block;
+    width: 15%;
+    color: white;
+    margin-top: 5vh;
+    padding-bottom: 3vh;
+    margin-left: 5vh;
+}
+
+.tituloServicios{
+    color: white;
+    padding-top: 5vh;
+    font-size: 2.3rem;
+
+}
+
+.ulServicios{
+    padding-top: 5vh;
+}
+
+
+.listaServicios{
+    color: white;
+    list-style: none;
+    font-size: 1.5rem;
+
+}
+
+.consultas{
+    width: 30%;
+    color: white;
+    font-size: 2rem;
+}
+
+.tituloConsultas{
+    color: white;
+    padding-top: 5vh;
+    font-size: 2.3rem;
+}
+
+.ulConsultas{
+    padding-top: 5vh;
+}
+
+.listaConsultas{
+    color: white;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+
+.divIconos{
+    margin-left: 20%;
+    margin-top: 5vh;
+}
+
+.icono{
+    font-size: 40px;
+    color: orange;
+    padding: 10px;
+}
+
+.headerGaleria{
+    height: 100vh;
+    background-image: url(../assets/img/Header\ Galeria.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.tituloGaleria{
+    color:white;
+    font-size: 4rem;
+
+    font-weight: 600;
+
+}
+.contenedorGaleria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+.headerContacto{
+    height: 100vh;
+    background-image: url(../assets/img/Header\ Contactojpg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+@media(max-width: 768px){
+    .headerContacto{
+        height: 100vh;
+    }
+}
+
+.cajaTitulo_Contacto{
+    font-size: 5rem;
+}
+
+.mainContacto{
+    background-color: rgb(46, 22, 3);
+}
+
+.informacionContacto{
+    margin-left: 7vh;
+}
+
+.infoContacto{
+    height: 50vh;
+}
+
+.listaContacto{
+    color: white;
+    font-size: 2.5rem;
+    padding: 2vh;
+}
+
+.botonEnviar{
+    font-size: 2.2rem;
+}
+
+.imagen{
+    border: 1px solid black;
+    
+}
+
+.imagen img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+
+}
+
+.tituloYt{
+    color: white;
+    font-size: 4rem;
+
+}
+
+
+.headerServicios{
+    height: 100vh;
+    background-image: url(../assets/img/Header\ Servicios.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.mainServicios{
+    background-color: rgb(46, 22, 3)
+}
+
+.imagenServicios{
+
+    background-image: url(../assets/img/ImagenServicio.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+
+}
+
+.cajaPrecios{
+    height: 60vh;
+}
+
+.listaCosto{
+    font-size: 2.5rem;
+    padding: 2vh;
+}
+
+.headerTienda{
+    height: 100vh;
+    background-image: url(../assets/img/Header\ Tienda.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}

@@ -1,0 +1,80 @@
+.footer {
+    background-color: $bg-color-footer;
+    .container {
+        @include flexbox (flex, row, center);
+        .col-md-4 {
+            width: 33.33%;
+            padding: 0 15px;
+            .tituloNosotros {
+                color: white;
+                font-size: 2.3rem;
+                padding-top: 5vh;
+            }
+            .parrafo1 {
+                color: white;
+                padding-top: 7vh;
+                font-size: 1.5rem;
+            }
+            .divIconos {
+                margin-left: 20%;
+                margin-top: 5vh;
+                .icono {
+                    font-size: 40px;
+                    color: orange;
+                    padding: 10px;
+                }
+            }
+            .tituloServicios {
+                color: white;
+                padding-top: 5vh;
+                font-size: 2.3rem;
+            }
+            .ulServicios {
+                padding-top: 5vh;
+                .listaServicios {
+                    color: white;
+                    list-style: none;
+                    font-size: 1.5rem;
+                }
+            }
+            .tituloConsultas {
+                color: white;
+                padding-top: 5vh;
+                font-size: 2.3rem;
+            }
+            .ulConsultas {
+                padding-top: 5vh;
+                .listaConsultas {
+                    color: white;
+                    list-style: none;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+    
+    @media screen and (max-width: 576px) {
+        .container {
+            flex-wrap: wrap;
+            .col-md-4 {
+                width: 100%;
+                padding: 0;
+                margin-bottom: 20px;
+            }
+            .tituloNosotros,
+            .parrafo1,
+            .tituloServicios,
+            .ulServicios,
+            .tituloConsultas,
+            .ulConsultas {
+            padding-top: 2.5vh;
+            }
+            .divIconos {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+
+

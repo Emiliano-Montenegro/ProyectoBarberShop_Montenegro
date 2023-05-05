@@ -1,0 +1,27 @@
+section{
+    .contenedorGaleria{
+        display: map-get($map-flex, flex);
+        flex-wrap: map-get($map-flex, wrap);
+        justify-content: map-get($map-flex, centro);
+        align-items: map-get($map-flex, centro);
+        gap: 20px;
+        .imagen img{
+            border: $borde;
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+        }
+    }
+    .tituloYt{
+        color: white;
+        font-size: 4rem;
+    }
+    @media (max-width: 767px) {
+        .tituloYt {
+            text-align: center;
+        }
+    }
+    
+    
+}
+
