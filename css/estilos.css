@@ -18,11 +18,27 @@ body {
   background-color: rgb(46, 22, 3);
 }
 
+.body404 {
+  background-image: url(../assets/img/Fondo404.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 .header {
   position: relative;
 }
 .header .navegacion {
   font-size: 2rem;
+}
+.header .navegacion .logo {
+  width: 8vw;
+}
+@media screen and (max-width: 767px) {
+  .header .navegacion .logo {
+    width: 11vh;
+  }
 }
 .header .navegacion .colorBurguer {
   border-color: white !important;
@@ -45,8 +61,6 @@ body {
   margin-left: 12.5%;
   margin-top: 10%;
   font-size: 3rem;
-  /*backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);*/
 }
 .header .reserva {
   position: absolute;
@@ -65,10 +79,15 @@ body {
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
-.header .reserva .parrafoReserva {
+.header .reserva .iconoReserva {
+  text-decoration: none;
+  color: black;
+}
+.header .reserva .iconoReserva .parrafoReserva {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   text-align: center;
+  text-decoration: none;
 }
 @media only screen and (max-width: 767px) {
   .header .reserva {
@@ -180,6 +199,10 @@ section .listaContacto {
 section .botonEnviar {
   font-size: 2.2rem;
 }
+section .mapa {
+  margin-top: 3vh;
+  width: 100%;
+}
 
 section .imagenServicios {
   background-image: url(../assets/img/ImagenServicio.jpg);
@@ -202,6 +225,38 @@ section .cajaPrecios ul .listaCosto {
   }
 }
 
+.main404 {
+  height: 81.5vh;
+}
+.main404 .titulo404 {
+  font-size: 5rem;
+  font-weight: bold;
+  color: red;
+  text-align: center;
+  margin-top: 15vh;
+}
+.main404 .p404 {
+  font-size: 2rem;
+  margin-top: 5vh;
+  font-weight: bold;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+@media only screen and (max-width: 767px) {
+  .main404 {
+    height: 95vh;
+  }
+  .titulo404 {
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+  }
+  .p404 {
+    color: black;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+  }
+}
 .tienda {
   padding-right: 9vh !important;
 }
