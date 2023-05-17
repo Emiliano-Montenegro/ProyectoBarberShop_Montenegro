@@ -60,17 +60,22 @@
                 width: 100%;
                 padding: 0;
                 margin-bottom: 20px;
-            }
-            .tituloNosotros,
-            .parrafo1,
-            .tituloServicios,
-            .ulServicios,
-            .tituloConsultas,
-            .ulConsultas {
-            padding-top: 2.5vh;
-            }
-            .divIconos {
-                margin-left: 0;
+                .tituloNosotros{
+                    margin-top: 2.5vh;
+                    padding-top: 2vh;
+                    margin-left: 2vh;
+                }
+                .parrafo1,
+                .tituloServicios,
+                .ulServicios,
+                .tituloConsultas,
+                .ulConsultas{
+                    padding-top: 2vh;
+                    margin-left: 2vh;
+                }
+                .divIconos{
+                    margin-left: 50;
+                }
             }
         }
     }

@@ -327,16 +327,21 @@ section .cajaPrecios ul .listaCosto {
     padding: 0;
     margin-bottom: 20px;
   }
-  .footer .container .tituloNosotros,
-  .footer .container .parrafo1,
-  .footer .container .tituloServicios,
-  .footer .container .ulServicios,
-  .footer .container .tituloConsultas,
-  .footer .container .ulConsultas {
-    padding-top: 2.5vh;
+  .footer .container .col-md-4 .tituloNosotros {
+    margin-top: 2.5vh;
+    padding-top: 2vh;
+    margin-left: 2vh;
   }
-  .footer .container .divIconos {
-    margin-left: 0;
+  .footer .container .col-md-4 .parrafo1,
+  .footer .container .col-md-4 .tituloServicios,
+  .footer .container .col-md-4 .ulServicios,
+  .footer .container .col-md-4 .tituloConsultas,
+  .footer .container .col-md-4 .ulConsultas {
+    padding-top: 2vh;
+    margin-left: 2vh;
+  }
+  .footer .container .col-md-4 .divIconos {
+    margin-left: 50;
   }
 }
 
