@@ -3,40 +3,33 @@ let carrito = [];
 
 // Función para agregar un producto al carrito
 function agregarAlCarrito(nombreProducto, cantidad, precio) {
-    const producto = {
-        nombre: nombreProducto,
-        cantidad: parseInt(cantidad),
-        precio: parseFloat(precio),
-        subtotal: parseFloat(cantidad) * parseFloat(precio)
-    };
+    const productoExistente = carrito.find(producto => producto.nombre === nombreProducto);
 
-    carrito.push(producto);
+    if (productoExistente) {
+        // Actualizar cantidad y subtotal del producto existente
+        productoExistente.cantidad += parseInt(cantidad);
+        productoExistente.subtotal = productoExistente.cantidad * parseFloat(precio);
+    } else {
+        // Agregar nuevo producto al carrito
+        const producto = {
+            nombre: nombreProducto,
+            cantidad: parseInt(cantidad),
+            precio: parseFloat(precio),
+            subtotal: parseFloat(cantidad) * parseFloat(precio)
+        };
+        carrito.push(producto);
+    }
+
     guardarCarritoEnStorage(); // Guardar carrito en el almacenamiento local
     actualizarTablaProductos();
     actualizarTotal();
 }
 
-// Función para actualizar el total en la tabla de productos
-function actualizarTotal() {
-    const total = carrito.reduce((sum, producto) => sum + producto.subtotal, 0);
-    const filaTotal = document.getElementById('filaTotal');
 
-    // Verificar si hay productos en el carrito
-    if (carrito.length > 0) {
-        filaTotal.innerHTML = `
-        <td colspan="2" class="text-end fw-bold">Total:</td>
-        <td>$${total.toFixed(2)}</td>
-    `;
-        filaTotal.style.display = 'table-row'; // Mostrar la fila del total
-    } else {
-        filaTotal.style.display = 'none'; // Ocultar la fila del total si no hay productos
-    }
-}
-
-// Función para actualizar la tabla de productos en el HTML
+// Función para actualizar la tabla de productos
 function actualizarTablaProductos() {
     const tablaProductos = document.getElementById('tablaBody');
-    tablaProductos.innerHTML = ''; // Limpiar contenido actual
+    tablaProductos.innerHTML = '';
 
     // Crear filas de productos
     carrito.forEach((producto) => {
@@ -49,7 +42,22 @@ function actualizarTablaProductos() {
         tablaProductos.appendChild(fila);
     });
 
-    actualizarTotal();
+    // Calcular y agregar fila del total
+    const filaTotal = document.createElement('tr');
+    const total = carrito.reduce((acumulador, producto) => acumulador + producto.subtotal, 0);
+    filaTotal.innerHTML = `
+        <td><strong>Total</strong></td>
+        <td></td>
+        <td><strong>$${total.toFixed(2)}</strong></td>
+    `;
+    tablaProductos.appendChild(filaTotal);
+}
+
+// Función para actualizar el total de los productos en el carrito
+function actualizarTotal() {
+    const totalElemento = document.getElementById('total');
+    const total = carrito.reduce((acumulador, producto) => acumulador + producto.subtotal, 0);
+    totalElemento.innerText = `$${total.toFixed(2)}`;
 }
 
 // Función para guardar el carrito en el almacenamiento local
