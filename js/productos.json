@@ -1,0 +1,22 @@
+[
+    {
+        "nombre": "Shampoo para Cabello",
+        "precio": 2000
+    },
+    {
+        "nombre": "Shampoo para la Barba",
+        "precio": 1750
+    },
+    {
+        "nombre": "Oleo Barba",
+        "precio": 1250
+    },
+    {
+        "nombre": "After Shave",
+        "precio": 1000
+    },
+    {
+        "nombre": "Kit Barba",
+        "precio": 3500
+    }
+]
