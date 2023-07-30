@@ -1,7 +1,5 @@
-// Array para almacenar los productos seleccionados
 let carrito = [];
 
-// Función para agregar un producto al carrito
 function agregarAlCarrito(nombreProducto, cantidad, precio) {
     const productoExistente = carrito.find(producto => producto.nombre === nombreProducto);
 
@@ -20,12 +18,11 @@ function agregarAlCarrito(nombreProducto, cantidad, precio) {
         carrito.push(producto);
     }
 
-    guardarCarritoEnStorage(); // Guardar carrito en el almacenamiento local
+    guardarCarritoEnStorage();
     actualizarTablaProductos();
     actualizarTotal();
 }
 
-// Función para actualizar la tabla de productos
 function actualizarTablaProductos() {
     const tablaProductos = document.getElementById('tablaBody');
     tablaProductos.innerHTML = '';
@@ -41,7 +38,6 @@ function actualizarTablaProductos() {
         tablaProductos.appendChild(fila);
     });
 
-    // Calcular y agregar fila del total
     const filaTotal = document.createElement('tr');
     const total = carrito.reduce((acumulador, producto) => acumulador + producto.subtotal, 0);
     filaTotal.innerHTML = `
@@ -52,14 +48,12 @@ function actualizarTablaProductos() {
     tablaProductos.appendChild(filaTotal);
 }
 
-// Función para actualizar el total de los productos en el carrito
 function actualizarTotal() {
     const totalElemento = document.getElementById('total');
     const total = carrito.reduce((acumulador, producto) => acumulador + producto.subtotal, 0);
     totalElemento.innerText = `$${total.toFixed(2)}`;
 }
 
-// Función para guardar el carrito en el almacenamiento local
 function guardarCarritoEnStorage() {
     localStorage.setItem('carrito', JSON.stringify(carrito));
 }
@@ -77,9 +71,8 @@ function obtenerProductos() {
         });
 }
 
-// Función para vaciar el carrito
 function vaciarCarrito() {
-    // Mostrar alerta de confirmación utilizando SweetAlert2
+    // Mostrar alerta de confirmación
     Swal.fire({
         title: '¿Estás seguro?',
         text: 'Se eliminarán todos los productos del carrito.',
@@ -89,7 +82,6 @@ function vaciarCarrito() {
         cancelButtonText: 'Cancelar'
     }).then((result) => {
         if (result.isConfirmed) {
-            // Vaciar el carrito si el usuario confirma la acción
             carrito = [];
             guardarCarritoEnStorage();
             actualizarTablaProductos();
@@ -100,17 +92,13 @@ function vaciarCarrito() {
     });
 }
 
-// Agregar evento de clic al botón "Vaciar Carrito"
 const btnVaciarCarrito = document.getElementById('btnVaciarCarrito');
 btnVaciarCarrito.addEventListener('click', vaciarCarrito);
 
-// Agregar evento de clic al botón "Finalizar Compra"
 const btnFinalizarCompra = document.getElementById('btnFinalizarCompra');
 btnFinalizarCompra.addEventListener('click', finalizarCompra);
 
-// Función para finalizar la compra
 function finalizarCompra() {
-    // Mostrar alerta de confirmación utilizando SweetAlert2
     Swal.fire({
         title: '¿Deseas finalizar la compra?',
         text: 'Una vez finalizada la compra, no podrás agregar más productos al carrito.',
@@ -125,7 +113,6 @@ function finalizarCompra() {
     });
 }
 
-// Función para manejar el evento de agregar al carrito
 function handleAgregarCarrito(event) {
     const card = event.target.closest('.card');
     const nombreProducto = card.querySelector('.card-title').innerText;
@@ -135,7 +122,7 @@ function handleAgregarCarrito(event) {
     agregarAlCarrito(nombreProducto, cantidad, precio);
 }
 
-// Agregar evento de clic a todos los botones "Agregar al carrito"
+
 const botonesAgregar = document.querySelectorAll('.card .btn');
 botonesAgregar.forEach((boton) => {
     boton.addEventListener('click', handleAgregarCarrito);
